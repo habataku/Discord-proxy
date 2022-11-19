@@ -2,8 +2,9 @@
   "version": 2,
   "regions": ["hnd1"],
   "builds": [
-    { "src": "wombat-handler.js","use": "@vercel/node" },
+    { "src": "/public/wombat/src/wbWombat.js","use": "@vercel/node" },
     { "src": "public/**","use": "@vercel/static" },
+    { "src": "public/wombat/**","use": "@vercel/static" },
     { "src": "*.json","use": "@vercel/static" }
   ],
   "routes": [
